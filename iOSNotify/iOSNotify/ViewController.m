@@ -8,13 +8,14 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *startBtn;
 @property (weak, nonatomic) IBOutlet UIButton *stopBtn;
 @property (weak, nonatomic) IBOutlet UITextField *textEntry;
 @property (strong, nonatomic) NSTimer* timer;
 @property (weak, nonatomic) IBOutlet UITextField *intervalText;
-
+@property (strong) CLLocationManager* clmanager;
 @end
 
 @implementation ViewController
@@ -22,6 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    if(self.clmanager == nil){
+        self.clmanager = [[CLLocationManager alloc]init];
+        [self.clmanager requestAlwaysAuthorization];
+    }
+    self.clmanager.delegate = self;
+    [self.clmanager startMonitoringSignificantLocationChanges];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,7 +37,7 @@
 }
 - (IBAction)startBtnClicked:(id)sender {
     //[self registerForNotification];
-    [self fireNotication];
+   // [self fireNotication];
     self.textEntry.enabled = false;
     self.intervalText.enabled = false;
     if(!self.timer)
@@ -51,6 +58,26 @@
     localNotification.alertBody = self.textEntry.text;
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+}
+
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    if (status == kCLAuthorizationStatusNotDetermined) {
+        NSLog(@"Location Access Disabled");
+        [self.clmanager requestAlwaysAuthorization];
+    }
+    else {
+        NSLog(@"Location Access Enabled");
+    }
+}
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"Locations Changed %@",locations);
+}
+
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"Location Detect failure ::%@",error);
 }
 //
 //-(void) registerForNotification {

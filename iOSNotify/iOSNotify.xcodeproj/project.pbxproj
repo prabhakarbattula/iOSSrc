@@ -14,6 +14,7 @@
 		EDA36E121AC002DD0032328E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA36E111AC002DD0032328E /* Images.xcassets */; };
 		EDA36E151AC002DD0032328E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA36E131AC002DD0032328E /* LaunchScreen.xib */; };
 		EDA36E211AC002DD0032328E /* iOSNotifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA36E201AC002DD0032328E /* iOSNotifyTests.m */; };
+		EDA36E2B1AC0331E0032328E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA36E2A1AC0331E0032328E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EDA36E1A1AC002DD0032328E /* iOSNotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSNotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA36E1F1AC002DD0032328E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA36E201AC002DD0032328E /* iOSNotifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSNotifyTests.m; sourceTree = "<group>"; };
+		EDA36E2A1AC0331E0032328E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA36E2B1AC0331E0032328E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		EDA36DF81AC002DC0032328E = {
 			isa = PBXGroup;
 			children = (
+				EDA36E2A1AC0331E0032328E /* CoreLocation.framework */,
 				EDA36E031AC002DD0032328E /* iOSNotify */,
 				EDA36E1D1AC002DD0032328E /* iOSNotifyTests */,
 				EDA36E021AC002DD0032328E /* Products */,
@@ -168,6 +172,11 @@
 				TargetAttributes = {
 					EDA36E001AC002DD0032328E = {
 						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					EDA36E191AC002DD0032328E = {
 						CreatedOnToolsVersion = 6.2;
