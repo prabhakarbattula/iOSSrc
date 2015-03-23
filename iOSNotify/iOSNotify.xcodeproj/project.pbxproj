@@ -423,6 +423,7 @@
 				EDA36E261AC002DD0032328E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDA36E271AC002DD0032328E /* Build configuration list for PBXNativeTarget "iOSNotifyTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				EDA36E291AC002DD0032328E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

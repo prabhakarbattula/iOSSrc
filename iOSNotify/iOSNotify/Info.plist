@@ -22,12 +22,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationUsageDescription</key>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string>App use Locations service mode Always</string>
+	<key>NSLocationUsageDescription</key>
+	<string>App uses Location services (Privacy settings)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App uses Location service mode WhenInUse</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
-		<string>App use Locations service mode Always</string>
+		<string>location</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

@@ -23,12 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    if(self.clmanager == nil){
-        self.clmanager = [[CLLocationManager alloc]init];
-        [self.clmanager requestAlwaysAuthorization];
-    }
+    // ** Don't forget to add NSLocationWhenInUseUsageDescription in MyApp-Info.plist and give it a string
+    
+    self.clmanager = [[CLLocationManager alloc] init];
     self.clmanager.delegate = self;
-    [self.clmanager startMonitoringSignificantLocationChanges];
+    // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
+    if ([self.clmanager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.clmanager requestWhenInUseAuthorization];
+    }
+    
+    [self.clmanager startUpdatingLocation];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,6 +58,7 @@
 
 -(void) fireNotication
 {
+    NSLog(@"Fire");
     UILocalNotification* localNotification = [[UILocalNotification alloc]init];
     localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:0];
     localNotification.alertBody = self.textEntry.text;
@@ -64,7 +70,7 @@
 {
     if (status == kCLAuthorizationStatusNotDetermined) {
         NSLog(@"Location Access Disabled");
-        [self.clmanager requestAlwaysAuthorization];
+        [self requestAuthorization];
     }
     else {
         NSLog(@"Location Access Enabled");
@@ -92,5 +98,36 @@
 //-(void) respondToNotification:(NSNotification*) notification{
 //    NSLog(@"Notification received");
 //}
+
+-(void) requestAuthorization {
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    
+    // If the status is denied or only granted for when in use, display an alert
+    if (status == kCLAuthorizationStatusAuthorizedWhenInUse || status == kCLAuthorizationStatusDenied) {
+        NSString *title;
+        title = (status == kCLAuthorizationStatusDenied) ? @"Location services are off" : @"Background location is not enabled";
+        NSString *message = @"To use background location you must turn on 'Always' in the Location Services Settings";
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
+                                                            message:message
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"Settings", nil];
+        [alertView show];
+    }
+    // The user has not enabled any location services. Request background authorization.
+    else if (status == kCLAuthorizationStatusNotDetermined) {
+        [self.clmanager requestAlwaysAuthorization];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        // Send the user to the Settings for this app
+        NSURL *settingsURL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        [[UIApplication sharedApplication] openURL:settingsURL];
+    }
+}
 
 @end
