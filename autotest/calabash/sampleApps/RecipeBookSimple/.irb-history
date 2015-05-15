@@ -1,0 +1,50 @@
+swipe:left, :query=>"tableViewCell index:1", :offse
+swipe :left, :query=>"tableViewCell index:1", :offset=>{:x=>100,:y=>0}
+swipe :left, :query=>"tableViewCell index:1", :offset=>{:x=>100,:y=>0}
+clear
+cls
+swipe :left, :query=>"tableViewCell index:1", :offset=>{:x=>100,:y=>0}
+swipe :left, :query=>"tableViewCell index:1", :offset=>{:x=>200,:y=>0}
+swipe :left, :query=>"tableViewCell index:1", :offset=>{:x=>150,:y=>0}
+swipe :left, :query=>"tableViewCell index:1", force:strong
+swipe :left, :query=>"tableViewCell index:1", force :strong
+swipe :left, :query=>"tableViewCell index:1"
+touch :query=>"tableViewCell index:1", :offset=>{:x=>150,:y=>0}
+touch :query=>"tableViewCell index:1", :offset=>{:x=>200,:y=>0}
+touch :query=>"tableViewCell index:1", :offset=>{:x=>250,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>100,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>150,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>150,:y=>100}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>200,:y=>100}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>200,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>210,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>250,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>300,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>310,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>10,:y=>0}
+touch :query=>"tableViewCell indexPath:1,0", :offset=>{:x=>100,:y=>0}
+flash :query=>"tableViewCell indexPath:1,0"
+flash :query=>"tableViewCell index:1"
+flash :query=>"tableViewCell index:0"
+query tableViewCell
+query tableViewCell.count
+query(tableViewCell).count
+query('tableViewCell').count
+query('tableViewCell')
+query('tableViewCell label')
+query('tableViewCellLabel')
+query('tableViewLabel')
+query('tableViewCell button')
+touch :query=>"tableViewCell indexPath:1,0 button", :offset=>{:x=>100,:y=>0}
+touch :query=>"tableViewCell button indexPath:1,0", :offset=>{:x=>100,:y=>0}
+touch :query=>"button[0]", :offset=>{:x=>100,:y=>0}
+touch :query=>"button[0]"
+swipe:left :query=>"button[0]"
+swipe :left :query=>"button[0]"
+swipe :left, :query=>"button[0]"
+quit
+swipe :left, :query=>"button[0]"
+quit
+scroll_to_cell(options = {:query => 'tableView', :row => 0, :section => 0, :scroll_position => :top, :animate => true}) 
+touch(options = {:query => 'tableView', :row => 0, :section => 0, :scroll_position => :top, :animate => true}) 
+quit

@@ -1,0 +1,4 @@
+#Gemfile comtaining sample gems needed for calabash-ios
+source 'https://rubygems.org'
+gem 'run_loop', '~> 1.0.8'
+gem 'calabash-cucumber'

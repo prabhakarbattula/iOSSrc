@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150415 13:34:53.992" generator="Robot 2.8.7 (Python 2.7.5 on darwin)">
+<suite source="/Users/MP/sourceCode/iOSSrc/autotest/RecipeBookSimple/robot_iOS.robot" id="s1" name="robot iOS">
+<test id="s1-t1" name="I can take a screenshot">
+<kw type="kw" name="IOSLibrary.Capture Screenshot">
+<doc>Captures a screenshot of the current screen and embeds it</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150415 13:34:54.088" level="INFO">Starting new HTTP connection (1): localhost</msg>
+<msg timestamp="20150415 13:34:54.090" level="FAIL">ConnectionError: ('Connection aborted.', error(61, 'Connection refused'))</msg>
+<status status="FAIL" endtime="20150415 13:34:54.090" starttime="20150415 13:34:54.073"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150415 13:34:54.090" critical="yes" starttime="20150415 13:34:54.072">ConnectionError: ('Connection aborted.', error(61, 'Connection refused'))</status>
+</test>
+<test id="s1-t2" name="I can touch position">
+<kw type="kw" name="IOSLibrary.Touch Position">
+<doc>Simulate a touch at the specified position</doc>
+<arguments>
+<arg>x=35</arg>
+<arg>y=35</arg>
+</arguments>
+<msg timestamp="20150415 13:34:54.093" level="INFO">Starting new HTTP connection (1): localhost</msg>
+<msg timestamp="20150415 13:34:54.094" level="FAIL">ConnectionError: ('Connection aborted.', error(61, 'Connection refused'))</msg>
+<status status="FAIL" endtime="20150415 13:34:54.094" starttime="20150415 13:34:54.091"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150415 13:34:54.094" critical="yes" starttime="20150415 13:34:54.090">ConnectionError: ('Connection aborted.', error(61, 'Connection refused'))</status>
+</test>
+<test id="s1-t3" name="I can rotate the device to">
+<kw type="kw" name="IOSLibrary.Set Device Orientation To">
+<doc>Set orientation of the simulator</doc>
+<arguments>
+<arg>left</arg>
+</arguments>
+<msg timestamp="20150415 13:34:54.097" level="INFO">Starting new HTTP connection (1): localhost</msg>
+<msg timestamp="20150415 13:34:54.098" level="FAIL">ConnectionError: ('Connection aborted.', error(61, 'Connection refused'))</msg>
+<status status="FAIL" endtime="20150415 13:34:54.099" starttime="20150415 13:34:54.095"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150415 13:34:54.099" critical="yes" starttime="20150415 13:34:54.095">ConnectionError: ('Connection aborted.', error(61, 'Connection refused'))</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150415 13:34:54.099" starttime="20150415 13:34:53.993"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="0">Critical Tests</stat>
+<stat fail="3" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="3" pass="0" id="s1" name="robot iOS">robot iOS</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

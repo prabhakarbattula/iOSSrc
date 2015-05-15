@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED6B55E51A56A6030046D955 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6B55E41A56A6030046D955 /* Default-568h@2x.png */; };
+		ED6D0A131ADD49C8007B891A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA6C371589A2DF0093D97E /* main.m */; };
+		ED6D0A141ADD49C8007B891A /* RecipeBookAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA6C3B1589A2DF0093D97E /* RecipeBookAppDelegate.m */; };
+		ED6D0A151ADD49C8007B891A /* RecipeBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA6C411589A2DF0093D97E /* RecipeBookViewController.m */; };
+		ED6D0A161ADD49C8007B891A /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F419149D158D558600E54887 /* RecipeDetailViewController.m */; };
+		ED6D0A181ADD49C8007B891A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AA6C2B1589A2DF0093D97E /* UIKit.framework */; };
+		ED6D0A191ADD49C8007B891A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AA6C2D1589A2DF0093D97E /* Foundation.framework */; };
+		ED6D0A1A1ADD49C8007B891A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AA6C2F1589A2DF0093D97E /* CoreGraphics.framework */; };
+		ED6D0A1C1ADD49C8007B891A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4AA6C341589A2DF0093D97E /* InfoPlist.strings */; };
+		ED6D0A1D1ADD49C8007B891A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4AA6C3D1589A2DF0093D97E /* MainStoryboard.storyboard */; };
+		ED6D0A1E1ADD49C8007B891A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED6B55E41A56A6030046D955 /* Default-568h@2x.png */; };
+		ED6D0A241ADD4A4F007B891A /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2fba607fa27d80bbc5503358 /* calabash.framework */; };
+		ED6D0A251ADD4A82007B891A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = f3831204905b5b96ef28d8f2 /* CFNetwork.framework */; };
+		ED6D0A261ADD4B15007B891A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6B55E71A56AA130046D955 /* Security.framework */; };
+		F419149E158D558600E54887 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F419149D158D558600E54887 /* RecipeDetailViewController.m */; };
+		F4AA6C2C1589A2DF0093D97E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AA6C2B1589A2DF0093D97E /* UIKit.framework */; };
+		F4AA6C2E1589A2DF0093D97E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AA6C2D1589A2DF0093D97E /* Foundation.framework */; };
+		F4AA6C301589A2DF0093D97E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AA6C2F1589A2DF0093D97E /* CoreGraphics.framework */; };
+		F4AA6C361589A2DF0093D97E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4AA6C341589A2DF0093D97E /* InfoPlist.strings */; };
+		F4AA6C381589A2DF0093D97E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA6C371589A2DF0093D97E /* main.m */; };
+		F4AA6C3C1589A2DF0093D97E /* RecipeBookAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA6C3B1589A2DF0093D97E /* RecipeBookAppDelegate.m */; };
+		F4AA6C3F1589A2DF0093D97E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4AA6C3D1589A2DF0093D97E /* MainStoryboard.storyboard */; };
+		F4AA6C421589A2DF0093D97E /* RecipeBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA6C411589A2DF0093D97E /* RecipeBookViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2fba607fa27d80bbc5503358 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		ED6B55E41A56A6030046D955 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ED6B55E71A56AA130046D955 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ED6D0A221ADD49C8007B891A /* RecipeBook-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RecipeBook-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6D0A231ADD49C9007B891A /* RecipeBook-cal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RecipeBook-cal-Info.plist"; path = "/Users/MP/sourceCode/iOSSrc/autotest/RecipeBookSimple/RecipeBook-cal-Info.plist"; sourceTree = "<absolute>"; };
+		F419149C158D558600E54887 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
+		F419149D158D558600E54887 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
+		F4AA6C271589A2DF0093D97E /* RecipeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AA6C2B1589A2DF0093D97E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4AA6C2D1589A2DF0093D97E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4AA6C2F1589A2DF0093D97E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F4AA6C331589A2DF0093D97E /* RecipeBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecipeBook-Info.plist"; sourceTree = "<group>"; };
+		F4AA6C351589A2DF0093D97E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4AA6C371589A2DF0093D97E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4AA6C391589A2DF0093D97E /* RecipeBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecipeBook-Prefix.pch"; sourceTree = "<group>"; };
+		F4AA6C3A1589A2DF0093D97E /* RecipeBookAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeBookAppDelegate.h; sourceTree = "<group>"; };
+		F4AA6C3B1589A2DF0093D97E /* RecipeBookAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeBookAppDelegate.m; sourceTree = "<group>"; };
+		F4AA6C3E1589A2DF0093D97E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F4AA6C401589A2DF0093D97E /* RecipeBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeBookViewController.h; sourceTree = "<group>"; };
+		F4AA6C411589A2DF0093D97E /* RecipeBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeBookViewController.m; sourceTree = "<group>"; };
+		f3831204905b5b96ef28d8f2 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED6D0A171ADD49C8007B891A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6D0A261ADD4B15007B891A /* Security.framework in Frameworks */,
+				ED6D0A251ADD4A82007B891A /* CFNetwork.framework in Frameworks */,
+				ED6D0A241ADD4A4F007B891A /* calabash.framework in Frameworks */,
+				ED6D0A181ADD49C8007B891A /* UIKit.framework in Frameworks */,
+				ED6D0A191ADD49C8007B891A /* Foundation.framework in Frameworks */,
+				ED6D0A1A1ADD49C8007B891A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AA6C241589A2DF0093D97E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AA6C2C1589A2DF0093D97E /* UIKit.framework in Frameworks */,
+				F4AA6C2E1589A2DF0093D97E /* Foundation.framework in Frameworks */,
+				F4AA6C301589A2DF0093D97E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4AA6C1C1589A2DF0093D97E = {
+			isa = PBXGroup;
+			children = (
+				ED6B55E41A56A6030046D955 /* Default-568h@2x.png */,
+				F4AA6C311589A2DF0093D97E /* RecipeBook */,
+				F4AA6C2A1589A2DF0093D97E /* Frameworks */,
+				F4AA6C281589A2DF0093D97E /* Products */,
+				ED6D0A231ADD49C9007B891A /* RecipeBook-cal-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		F4AA6C281589A2DF0093D97E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4AA6C271589A2DF0093D97E /* RecipeBook.app */,
+				ED6D0A221ADD49C8007B891A /* RecipeBook-cal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4AA6C2A1589A2DF0093D97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED6B55E71A56AA130046D955 /* Security.framework */,
+				F4AA6C2B1589A2DF0093D97E /* UIKit.framework */,
+				F4AA6C2D1589A2DF0093D97E /* Foundation.framework */,
+				F4AA6C2F1589A2DF0093D97E /* CoreGraphics.framework */,
+				f3831204905b5b96ef28d8f2 /* CFNetwork.framework */,
+				2fba607fa27d80bbc5503358 /* calabash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4AA6C311589A2DF0093D97E /* RecipeBook */ = {
+			isa = PBXGroup;
+			children = (
+				F4AA6C3A1589A2DF0093D97E /* RecipeBookAppDelegate.h */,
+				F4AA6C3B1589A2DF0093D97E /* RecipeBookAppDelegate.m */,
+				F4AA6C3D1589A2DF0093D97E /* MainStoryboard.storyboard */,
+				F4AA6C401589A2DF0093D97E /* RecipeBookViewController.h */,
+				F4AA6C411589A2DF0093D97E /* RecipeBookViewController.m */,
+				F4AA6C321589A2DF0093D97E /* Supporting Files */,
+				F419149C158D558600E54887 /* RecipeDetailViewController.h */,
+				F419149D158D558600E54887 /* RecipeDetailViewController.m */,
+			);
+			path = RecipeBook;
+			sourceTree = "<group>";
+		};
+		F4AA6C321589A2DF0093D97E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4AA6C331589A2DF0093D97E /* RecipeBook-Info.plist */,
+				F4AA6C341589A2DF0093D97E /* InfoPlist.strings */,
+				F4AA6C371589A2DF0093D97E /* main.m */,
+				F4AA6C391589A2DF0093D97E /* RecipeBook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED6D0A111ADD49C8007B891A /* RecipeBook-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6D0A1F1ADD49C8007B891A /* Build configuration list for PBXNativeTarget "RecipeBook-cal" */;
+			buildPhases = (
+				ED6D0A121ADD49C8007B891A /* Sources */,
+				ED6D0A171ADD49C8007B891A /* Frameworks */,
+				ED6D0A1B1ADD49C8007B891A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RecipeBook-cal";
+			productName = RecipeBook;
+			productReference = ED6D0A221ADD49C8007B891A /* RecipeBook-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4AA6C261589A2DF0093D97E /* RecipeBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AA6C451589A2DF0093D97E /* Build configuration list for PBXNativeTarget "RecipeBook" */;
+			buildPhases = (
+				F4AA6C231589A2DF0093D97E /* Sources */,
+				F4AA6C241589A2DF0093D97E /* Frameworks */,
+				F4AA6C251589A2DF0093D97E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecipeBook;
+			productName = RecipeBook;
+			productReference = F4AA6C271589A2DF0093D97E /* RecipeBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4AA6C1E1589A2DF0093D97E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RecipeBook;
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = F4AA6C211589A2DF0093D97E /* Build configuration list for PBXProject "RecipeBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4AA6C1C1589A2DF0093D97E;
+			productRefGroup = F4AA6C281589A2DF0093D97E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4AA6C261589A2DF0093D97E /* RecipeBook */,
+				ED6D0A111ADD49C8007B891A /* RecipeBook-cal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED6D0A1B1ADD49C8007B891A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6D0A1C1ADD49C8007B891A /* InfoPlist.strings in Resources */,
+				ED6D0A1D1ADD49C8007B891A /* MainStoryboard.storyboard in Resources */,
+				ED6D0A1E1ADD49C8007B891A /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AA6C251589A2DF0093D97E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AA6C361589A2DF0093D97E /* InfoPlist.strings in Resources */,
+				F4AA6C3F1589A2DF0093D97E /* MainStoryboard.storyboard in Resources */,
+				ED6B55E51A56A6030046D955 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED6D0A121ADD49C8007B891A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6D0A131ADD49C8007B891A /* main.m in Sources */,
+				ED6D0A141ADD49C8007B891A /* RecipeBookAppDelegate.m in Sources */,
+				ED6D0A151ADD49C8007B891A /* RecipeBookViewController.m in Sources */,
+				ED6D0A161ADD49C8007B891A /* RecipeDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AA6C231589A2DF0093D97E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AA6C381589A2DF0093D97E /* main.m in Sources */,
+				F4AA6C3C1589A2DF0093D97E /* RecipeBookAppDelegate.m in Sources */,
+				F4AA6C421589A2DF0093D97E /* RecipeBookViewController.m in Sources */,
+				F419149E158D558600E54887 /* RecipeDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4AA6C341589A2DF0093D97E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4AA6C351589A2DF0093D97E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4AA6C3D1589A2DF0093D97E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4AA6C3E1589A2DF0093D97E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED6D0A201ADD49C8007B891A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeBook/RecipeBook-Prefix.pch";
+				INFOPLIST_FILE = "RecipeBook-cal-Info.plist";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "RecipeBook-cal";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ED6D0A211ADD49C8007B891A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeBook/RecipeBook-Prefix.pch";
+				INFOPLIST_FILE = "RecipeBook-cal-Info.plist";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "RecipeBook-cal";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F4AA6C431589A2DF0093D97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4AA6C441589A2DF0093D97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4AA6C461589A2DF0093D97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeBook/RecipeBook-Prefix.pch";
+				INFOPLIST_FILE = "RecipeBook/RecipeBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F4AA6C471589A2DF0093D97E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeBook/RecipeBook-Prefix.pch";
+				INFOPLIST_FILE = "RecipeBook/RecipeBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED6D0A1F1ADD49C8007B891A /* Build configuration list for PBXNativeTarget "RecipeBook-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6D0A201ADD49C8007B891A /* Debug */,
+				ED6D0A211ADD49C8007B891A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AA6C211589A2DF0093D97E /* Build configuration list for PBXProject "RecipeBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AA6C431589A2DF0093D97E /* Debug */,
+				F4AA6C441589A2DF0093D97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AA6C451589A2DF0093D97E /* Build configuration list for PBXNativeTarget "RecipeBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AA6C461589A2DF0093D97E /* Debug */,
+				F4AA6C471589A2DF0093D97E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4AA6C1E1589A2DF0093D97E /* Project object */;
+}
