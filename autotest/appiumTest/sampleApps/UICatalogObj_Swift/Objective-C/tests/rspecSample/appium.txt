@@ -1,0 +1,13 @@
+[caps]
+appium-version = "1.1.0"
+platformName = "iOS"
+platformVersion = "8.2"
+deviceName = "iPhone Simulator"
+app = "./../../build/Release-iphonesimulator/UICatalog.app"
+name = "Ruby iOS Tutorial"
+
+[appium_lib]
+debug = true
+wait = 30
+export_session = true
+require = ["./spec/requires.rb"]
