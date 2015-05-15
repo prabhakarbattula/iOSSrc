@@ -1,0 +1,4 @@
+[caps]
+platformName = "iOS"
+app = "./build/Release-iphonesimulator/RecipeBook.app"
+deviceName = "iPhone Simulator"
