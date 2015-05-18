@@ -1,1 +1,28 @@
-# circle.yml
+dependencies:
+  override:
+
+	pip install robotframework
+	gem install appium_console
+	pip install robotframework-appiumlibrary
+
+general:
+  build_dir: autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
+
+machine:
+  ruby:
+    version: 2.1.3p242
+
+  xcode:
+    version: "6.3.1"
+
+  environment:
+  	XCODE_PROJECT: autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
+  	XCODE_SCHEME: UICatalog.xcscheme
+
+  post:
+    - ./appium:
+        background: true
+    - sleep 5
+
+   test:
+   xcodebuild -configuration Release -target UICatalog -arch i386 -sdk iphonesimulator8.2
