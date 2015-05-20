@@ -7,7 +7,7 @@ ${PLATFORM_NAME}    iOS
 ${PLATFORM_VERSION}    8.2
 ${DEVICE_NAME}    iPhone Simulator
 # Appium uses the *.app directory that is created by the ios build to provision the emulator.
-${APP_LOCATION}		/Users/MP/sourceCode/iOSSrc/autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C/build/Release-iphonesimulator/UICatalog.app
+${APP_LOCATION}		${CURDIR}/../../build/Release-iphonesimulator/UICatalog.app
 
 
  
