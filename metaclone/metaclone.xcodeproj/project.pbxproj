@@ -16,6 +16,8 @@
 		ED82C69F1AC2ACBC001C7DBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED82C69D1AC2ACBC001C7DBF /* LaunchScreen.xib */; };
 		ED82C6AB1AC2ACBC001C7DBF /* metacloneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED82C6AA1AC2ACBC001C7DBF /* metacloneTests.m */; };
 		ED82C6BC1AC2B058001C7DBF /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED82C6BB1AC2B058001C7DBF /* SettingsVC.m */; };
+		EDFBCC051AC45BB600746EDD /* MrudulCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFBCC031AC45BB600746EDD /* MrudulCollectionViewCell.m */; };
+		EDFBCC061AC45BB600746EDD /* MrudulCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDFBCC041AC45BB600746EDD /* MrudulCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		ED82C6AA1AC2ACBC001C7DBF /* metacloneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = metacloneTests.m; sourceTree = "<group>"; };
 		ED82C6BA1AC2B058001C7DBF /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
 		ED82C6BB1AC2B058001C7DBF /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		EDFBCC021AC45BB600746EDD /* MrudulCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MrudulCollectionViewCell.h; sourceTree = "<group>"; };
+		EDFBCC031AC45BB600746EDD /* MrudulCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MrudulCollectionViewCell.m; sourceTree = "<group>"; };
+		EDFBCC041AC45BB600746EDD /* MrudulCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MrudulCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,7 @@
 		ED82C68A1AC2ACBC001C7DBF /* metaclone */ = {
 			isa = PBXGroup;
 			children = (
+				EDFBCBF71AC4557800746EDD /* Watchfaces */,
 				ED82C68F1AC2ACBC001C7DBF /* AppDelegate.h */,
 				ED82C6901AC2ACBC001C7DBF /* AppDelegate.m */,
 				ED82C6921AC2ACBC001C7DBF /* WatchFacesVC.h */,
@@ -127,6 +133,16 @@
 				ED82C6A91AC2ACBC001C7DBF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDFBCBF71AC4557800746EDD /* Watchfaces */ = {
+			isa = PBXGroup;
+			children = (
+				EDFBCC021AC45BB600746EDD /* MrudulCollectionViewCell.h */,
+				EDFBCC031AC45BB600746EDD /* MrudulCollectionViewCell.m */,
+				EDFBCC041AC45BB600746EDD /* MrudulCollectionViewCell.xib */,
+			);
+			name = Watchfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED82C69A1AC2ACBC001C7DBF /* Main.storyboard in Resources */,
+				EDFBCC061AC45BB600746EDD /* MrudulCollectionViewCell.xib in Resources */,
 				ED82C69F1AC2ACBC001C7DBF /* LaunchScreen.xib in Resources */,
 				ED82C69C1AC2ACBC001C7DBF /* Images.xcassets in Resources */,
 			);
@@ -232,6 +249,7 @@
 				ED82C6971AC2ACBC001C7DBF /* MetaFilterVC.m in Sources */,
 				ED82C6BC1AC2B058001C7DBF /* SettingsVC.m in Sources */,
 				ED82C6911AC2ACBC001C7DBF /* AppDelegate.m in Sources */,
+				EDFBCC051AC45BB600746EDD /* MrudulCollectionViewCell.m in Sources */,
 				ED82C6941AC2ACBC001C7DBF /* WatchFacesVC.m in Sources */,
 				ED82C68E1AC2ACBC001C7DBF /* main.m in Sources */,
 			);
@@ -424,6 +442,7 @@
 				ED82C6B01AC2ACBC001C7DBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED82C6B11AC2ACBC001C7DBF /* Build configuration list for PBXNativeTarget "metacloneTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +451,7 @@
 				ED82C6B31AC2ACBC001C7DBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WatchFacesVC : UIViewController
+@interface WatchFacesVC : UIViewController<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section;
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView;
 
 
 @end
