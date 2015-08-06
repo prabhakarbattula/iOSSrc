@@ -1,0 +1,16 @@
+# Uncomment this line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, "6.0"
+
+target "busticker" do
+    
+pod 'AFNetworking', '~> 2.0'
+#pod 'BSDatePickerWithPad', '~> 1.0.2'
+
+end
+
+target "bustickerTests" do
+
+end
+

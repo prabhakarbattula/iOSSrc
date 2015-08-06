@@ -1,0 +1,4 @@
+[caps]
+platformName = "ios"
+deviceName = "iPhone 6"
+app = "../../build/Release-iphonesimulator/SimpleGestureRecognizers.app"

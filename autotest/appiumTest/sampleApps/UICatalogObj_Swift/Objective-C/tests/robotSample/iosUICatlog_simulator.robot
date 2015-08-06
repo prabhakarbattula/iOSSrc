@@ -4,7 +4,7 @@ Library           AppiumLibrary
 *** Variables ***
 ${REMOTE_URL}     http://localhost:4723/wd/hub # URL to appium server
 ${PLATFORM_NAME}    iOS
-${PLATFORM_VERSION}    8.2
+${PLATFORM_VERSION}	8.3
 ${DEVICE_NAME}    iPhone Simulator
 # Appium uses the *.app directory that is created by the ios build to provision the emulator.
 ${APP_LOCATION}		${CURDIR}/../../build/Release-iphonesimulator/UICatalog.app

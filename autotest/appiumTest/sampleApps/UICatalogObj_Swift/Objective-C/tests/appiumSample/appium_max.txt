@@ -1,0 +1,7 @@
+[caps]
+appium-version = "1.1.0"
+platformName = "ios"
+platformVersion = "8.3"
+deviceName = "iPhone Simulator"
+app = "./../../build/Release-iphonesimulator/UICatalog.app"
+name = "Appium Playground"

@@ -7,6 +7,8 @@
 */
 
 #import "AAPLAppDelegate.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AAPLAppDelegate() <UISplitViewControllerDelegate>
 @end
@@ -21,6 +23,7 @@
     splitViewController.delegate = self;
     splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
 
+    [Fabric with:@[CrashlyticsKit]];
     return YES;
 }
 

@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E82062F19B9FD0F00F6592B /* BusTickerNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E82062E19B9FD0F00F6592B /* BusTickerNetworking.m */; };
+		3E82E18819C38A4900E4E032 /* LineListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E82E18719C38A4900E4E032 /* LineListTableViewController.m */; };
+		3EAD0AFD19B823050067372D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAD0AFC19B823050067372D /* Foundation.framework */; };
+		3EAD0AFF19B823050067372D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAD0AFE19B823050067372D /* CoreGraphics.framework */; };
+		3EAD0B0119B823050067372D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAD0B0019B823050067372D /* UIKit.framework */; };
+		3EAD0B0719B823050067372D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EAD0B0519B823050067372D /* InfoPlist.strings */; };
+		3EAD0B0919B823050067372D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD0B0819B823050067372D /* main.m */; };
+		3EAD0B0D19B823050067372D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD0B0C19B823050067372D /* AppDelegate.m */; };
+		3EAD0B1319B823050067372D /* LineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD0B1219B823050067372D /* LineViewController.m */; };
+		3EAD0B1619B823050067372D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD0B1519B823050067372D /* SearchViewController.m */; };
+		3EAD0B1819B823050067372D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAD0B1719B823050067372D /* Images.xcassets */; };
+		3EAD0B1F19B823050067372D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAD0B1E19B823050067372D /* XCTest.framework */; };
+		3EAD0B2019B823050067372D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAD0AFC19B823050067372D /* Foundation.framework */; };
+		3EAD0B2119B823050067372D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAD0B0019B823050067372D /* UIKit.framework */; };
+		3EAD0B2919B823050067372D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EAD0B2719B823050067372D /* InfoPlist.strings */; };
+		3EAD0B2B19B823050067372D /* bustickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD0B2A19B823050067372D /* bustickerTests.m */; };
+		3EAD0B3619B826940067372D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD0B3519B826940067372D /* HomeViewController.m */; };
+		3EDC485419C9478B0023CEC8 /* BusData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC485319C9478B0023CEC8 /* BusData.m */; };
+		3EDC485719C94CE00023CEC8 /* StopListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC485619C94CE00023CEC8 /* StopListTableViewController.m */; };
+		BC9291EA19D1443D9A8C5A2D /* libPods-busticker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E525B76DBD4359B0BAD0FF /* libPods-busticker.a */; };
+		ED0BF7DE1A074D8700EB22FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0BF7DD1A074D8700EB22FD /* CoreLocation.framework */; };
+		ED0BF7E11A0761E500EB22FD /* MyLocnSrvcInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BF7E01A0761E500EB22FD /* MyLocnSrvcInterface.m */; };
+		ED27D7721B5F629600EC5BAF /* SearchStopsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED27D7711B5F629600EC5BAF /* SearchStopsTableViewController.m */; };
+		ED75F31619E827E800F6C84C /* SearchStopTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED75F31519E827E800F6C84C /* SearchStopTableViewController.m */; };
+		ED75F31819E9598F00F6C84C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED75F31719E9598F00F6C84C /* CoreData.framework */; };
+		ED87614719DD9ECA0012EB86 /* StopDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87614619DD9ECA0012EB86 /* StopDetailsTableViewController.m */; };
+		ED99012219D9B42E00CA440A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED99012019D9B42E00CA440A /* Main.storyboard */; };
+		EDDBE01419FA8F640086A4CC /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBE01319FA8F640086A4CC /* CustomTableViewCell.m */; };
+		EDDBE01719FA95F40086A4CC /* RouteResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBE01619FA95F40086A4CC /* RouteResultTableViewController.m */; };
+		EDFE726C19F621380013868B /* TodoList.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDFE726A19F621380013868B /* TodoList.txt */; };
+		EDFE726D19F621380013868B /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFE726B19F621380013868B /* TemplateIcon2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EAD0B2219B823050067372D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EAD0AF119B823050067372D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EAD0AF819B823050067372D;
+			remoteInfo = busticker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E82062D19B9FD0F00F6592B /* BusTickerNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusTickerNetworking.h; sourceTree = "<group>"; };
+		3E82062E19B9FD0F00F6592B /* BusTickerNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusTickerNetworking.m; sourceTree = "<group>"; };
+		3E82E18619C38A4900E4E032 /* LineListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineListTableViewController.h; sourceTree = "<group>"; };
+		3E82E18719C38A4900E4E032 /* LineListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineListTableViewController.m; sourceTree = "<group>"; };
+		3EAD0AF919B823050067372D /* busticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = busticker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EAD0AFC19B823050067372D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3EAD0AFE19B823050067372D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3EAD0B0019B823050067372D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3EAD0B0419B823050067372D /* busticker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "busticker-Info.plist"; sourceTree = "<group>"; };
+		3EAD0B0619B823050067372D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3EAD0B0819B823050067372D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3EAD0B0A19B823050067372D /* busticker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "busticker-Prefix.pch"; sourceTree = "<group>"; };
+		3EAD0B0B19B823050067372D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3EAD0B0C19B823050067372D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3EAD0B1119B823050067372D /* LineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineViewController.h; sourceTree = "<group>"; };
+		3EAD0B1219B823050067372D /* LineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineViewController.m; sourceTree = "<group>"; };
+		3EAD0B1419B823050067372D /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		3EAD0B1519B823050067372D /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		3EAD0B1719B823050067372D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3EAD0B1D19B823050067372D /* bustickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bustickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EAD0B1E19B823050067372D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3EAD0B2619B823050067372D /* bustickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bustickerTests-Info.plist"; sourceTree = "<group>"; };
+		3EAD0B2819B823050067372D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3EAD0B2A19B823050067372D /* bustickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bustickerTests.m; sourceTree = "<group>"; };
+		3EAD0B3419B826940067372D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3EAD0B3519B826940067372D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3EDC485219C9478B0023CEC8 /* BusData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusData.h; sourceTree = "<group>"; };
+		3EDC485319C9478B0023CEC8 /* BusData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusData.m; sourceTree = "<group>"; };
+		3EDC485519C94CE00023CEC8 /* StopListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopListTableViewController.h; sourceTree = "<group>"; };
+		3EDC485619C94CE00023CEC8 /* StopListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopListTableViewController.m; sourceTree = "<group>"; };
+		68E525B76DBD4359B0BAD0FF /* libPods-busticker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-busticker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80742B69CDEF07B7D3191A0C /* Pods-busticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-busticker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-busticker/Pods-busticker.debug.xcconfig"; sourceTree = "<group>"; };
+		DBF8BEEE48550101E033C024 /* Pods-busticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-busticker.release.xcconfig"; path = "Pods/Target Support Files/Pods-busticker/Pods-busticker.release.xcconfig"; sourceTree = "<group>"; };
+		ED0BF7DD1A074D8700EB22FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ED0BF7DF1A0761E500EB22FD /* MyLocnSrvcInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocnSrvcInterface.h; sourceTree = "<group>"; };
+		ED0BF7E01A0761E500EB22FD /* MyLocnSrvcInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocnSrvcInterface.m; sourceTree = "<group>"; };
+		ED27D7701B5F629600EC5BAF /* SearchStopsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchStopsTableViewController.h; sourceTree = "<group>"; };
+		ED27D7711B5F629600EC5BAF /* SearchStopsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchStopsTableViewController.m; sourceTree = "<group>"; };
+		ED75F31419E827E800F6C84C /* SearchStopTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchStopTableViewController.h; sourceTree = "<group>"; };
+		ED75F31519E827E800F6C84C /* SearchStopTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchStopTableViewController.m; sourceTree = "<group>"; };
+		ED75F31719E9598F00F6C84C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ED87614519DD9ECA0012EB86 /* StopDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopDetailsTableViewController.h; sourceTree = "<group>"; };
+		ED87614619DD9ECA0012EB86 /* StopDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopDetailsTableViewController.m; sourceTree = "<group>"; };
+		ED99012119D9B42E00CA440A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDDBE01219FA8F640086A4CC /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		EDDBE01319FA8F640086A4CC /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		EDDBE01519FA95F40086A4CC /* RouteResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteResultTableViewController.h; sourceTree = "<group>"; };
+		EDDBE01619FA95F40086A4CC /* RouteResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteResultTableViewController.m; sourceTree = "<group>"; };
+		EDFE726A19F621380013868B /* TodoList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TodoList.txt; sourceTree = "<group>"; };
+		EDFE726B19F621380013868B /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EAD0AF619B823050067372D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0BF7DE1A074D8700EB22FD /* CoreLocation.framework in Frameworks */,
+				ED75F31819E9598F00F6C84C /* CoreData.framework in Frameworks */,
+				3EAD0AFF19B823050067372D /* CoreGraphics.framework in Frameworks */,
+				3EAD0B0119B823050067372D /* UIKit.framework in Frameworks */,
+				3EAD0AFD19B823050067372D /* Foundation.framework in Frameworks */,
+				BC9291EA19D1443D9A8C5A2D /* libPods-busticker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EAD0B1A19B823050067372D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EAD0B1F19B823050067372D /* XCTest.framework in Frameworks */,
+				3EAD0B2119B823050067372D /* UIKit.framework in Frameworks */,
+				3EAD0B2019B823050067372D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EAD0AF019B823050067372D = {
+			isa = PBXGroup;
+			children = (
+				3EAD0B0219B823050067372D /* busticker */,
+				3EAD0B2419B823050067372D /* bustickerTests */,
+				3EAD0AFB19B823050067372D /* Frameworks */,
+				3EAD0AFA19B823050067372D /* Products */,
+				78453FD4CC90AA23F57FC103 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3EAD0AFA19B823050067372D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EAD0AF919B823050067372D /* busticker.app */,
+				3EAD0B1D19B823050067372D /* bustickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EAD0AFB19B823050067372D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED0BF7DD1A074D8700EB22FD /* CoreLocation.framework */,
+				ED75F31719E9598F00F6C84C /* CoreData.framework */,
+				3EAD0AFC19B823050067372D /* Foundation.framework */,
+				3EAD0AFE19B823050067372D /* CoreGraphics.framework */,
+				3EAD0B0019B823050067372D /* UIKit.framework */,
+				3EAD0B1E19B823050067372D /* XCTest.framework */,
+				68E525B76DBD4359B0BAD0FF /* libPods-busticker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EAD0B0219B823050067372D /* busticker */ = {
+			isa = PBXGroup;
+			children = (
+				ED0BF7DF1A0761E500EB22FD /* MyLocnSrvcInterface.h */,
+				ED0BF7E01A0761E500EB22FD /* MyLocnSrvcInterface.m */,
+				ED99012019D9B42E00CA440A /* Main.storyboard */,
+				EDDBE01519FA95F40086A4CC /* RouteResultTableViewController.h */,
+				EDDBE01619FA95F40086A4CC /* RouteResultTableViewController.m */,
+				EDDBE01219FA8F640086A4CC /* CustomTableViewCell.h */,
+				ED27D7701B5F629600EC5BAF /* SearchStopsTableViewController.h */,
+				ED27D7711B5F629600EC5BAF /* SearchStopsTableViewController.m */,
+				EDDBE01319FA8F640086A4CC /* CustomTableViewCell.m */,
+				ED75F31419E827E800F6C84C /* SearchStopTableViewController.h */,
+				ED75F31519E827E800F6C84C /* SearchStopTableViewController.m */,
+				3EAD0B0B19B823050067372D /* AppDelegate.h */,
+				3EAD0B0C19B823050067372D /* AppDelegate.m */,
+				3E82E18619C38A4900E4E032 /* LineListTableViewController.h */,
+				3E82E18719C38A4900E4E032 /* LineListTableViewController.m */,
+				ED87614519DD9ECA0012EB86 /* StopDetailsTableViewController.h */,
+				ED87614619DD9ECA0012EB86 /* StopDetailsTableViewController.m */,
+				3EDC485519C94CE00023CEC8 /* StopListTableViewController.h */,
+				3EDC485619C94CE00023CEC8 /* StopListTableViewController.m */,
+				3EDC485219C9478B0023CEC8 /* BusData.h */,
+				3EDC485319C9478B0023CEC8 /* BusData.m */,
+				3E82062D19B9FD0F00F6592B /* BusTickerNetworking.h */,
+				3E82062E19B9FD0F00F6592B /* BusTickerNetworking.m */,
+				3EAD0B1119B823050067372D /* LineViewController.h */,
+				3EAD0B1219B823050067372D /* LineViewController.m */,
+				3EAD0B3419B826940067372D /* HomeViewController.h */,
+				3EAD0B3519B826940067372D /* HomeViewController.m */,
+				3EAD0B1419B823050067372D /* SearchViewController.h */,
+				3EAD0B1519B823050067372D /* SearchViewController.m */,
+				3EAD0B1719B823050067372D /* Images.xcassets */,
+				3EAD0B0319B823050067372D /* Supporting Files */,
+			);
+			path = busticker;
+			sourceTree = "<group>";
+		};
+		3EAD0B0319B823050067372D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EAD0B0419B823050067372D /* busticker-Info.plist */,
+				3EAD0B0519B823050067372D /* InfoPlist.strings */,
+				3EAD0B0819B823050067372D /* main.m */,
+				3EAD0B0A19B823050067372D /* busticker-Prefix.pch */,
+				EDFE726A19F621380013868B /* TodoList.txt */,
+				EDFE726B19F621380013868B /* TemplateIcon2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EAD0B2419B823050067372D /* bustickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EAD0B2A19B823050067372D /* bustickerTests.m */,
+				3EAD0B2519B823050067372D /* Supporting Files */,
+			);
+			path = bustickerTests;
+			sourceTree = "<group>";
+		};
+		3EAD0B2519B823050067372D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EAD0B2619B823050067372D /* bustickerTests-Info.plist */,
+				3EAD0B2719B823050067372D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78453FD4CC90AA23F57FC103 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80742B69CDEF07B7D3191A0C /* Pods-busticker.debug.xcconfig */,
+				DBF8BEEE48550101E033C024 /* Pods-busticker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EAD0AF819B823050067372D /* busticker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EAD0B2E19B823050067372D /* Build configuration list for PBXNativeTarget "busticker" */;
+			buildPhases = (
+				F7609DC23E7244B3AD9D16AF /* Check Pods Manifest.lock */,
+				3EAD0AF519B823050067372D /* Sources */,
+				3EAD0AF619B823050067372D /* Frameworks */,
+				3EAD0AF719B823050067372D /* Resources */,
+				5F1BDA30FD06401B8E6E209F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = busticker;
+			productName = busticker;
+			productReference = 3EAD0AF919B823050067372D /* busticker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EAD0B1C19B823050067372D /* bustickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EAD0B3119B823050067372D /* Build configuration list for PBXNativeTarget "bustickerTests" */;
+			buildPhases = (
+				3EAD0B1919B823050067372D /* Sources */,
+				3EAD0B1A19B823050067372D /* Frameworks */,
+				3EAD0B1B19B823050067372D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EAD0B2319B823050067372D /* PBXTargetDependency */,
+			);
+			name = bustickerTests;
+			productName = bustickerTests;
+			productReference = 3EAD0B1D19B823050067372D /* bustickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EAD0AF119B823050067372D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SimpleSoln;
+				TargetAttributes = {
+					3EAD0B1C19B823050067372D = {
+						TestTargetID = 3EAD0AF819B823050067372D;
+					};
+				};
+			};
+			buildConfigurationList = 3EAD0AF419B823050067372D /* Build configuration list for PBXProject "busticker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EAD0AF019B823050067372D;
+			productRefGroup = 3EAD0AFA19B823050067372D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EAD0AF819B823050067372D /* busticker */,
+				3EAD0B1C19B823050067372D /* bustickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EAD0AF719B823050067372D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFE726D19F621380013868B /* TemplateIcon2x.png in Resources */,
+				EDFE726C19F621380013868B /* TodoList.txt in Resources */,
+				ED99012219D9B42E00CA440A /* Main.storyboard in Resources */,
+				3EAD0B1819B823050067372D /* Images.xcassets in Resources */,
+				3EAD0B0719B823050067372D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EAD0B1B19B823050067372D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EAD0B2919B823050067372D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F1BDA30FD06401B8E6E209F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-busticker/Pods-busticker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7609DC23E7244B3AD9D16AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EAD0AF519B823050067372D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EDC485419C9478B0023CEC8 /* BusData.m in Sources */,
+				3E82062F19B9FD0F00F6592B /* BusTickerNetworking.m in Sources */,
+				EDDBE01419FA8F640086A4CC /* CustomTableViewCell.m in Sources */,
+				3EAD0B1619B823050067372D /* SearchViewController.m in Sources */,
+				3E82E18819C38A4900E4E032 /* LineListTableViewController.m in Sources */,
+				3EAD0B0D19B823050067372D /* AppDelegate.m in Sources */,
+				3EDC485719C94CE00023CEC8 /* StopListTableViewController.m in Sources */,
+				ED0BF7E11A0761E500EB22FD /* MyLocnSrvcInterface.m in Sources */,
+				3EAD0B1319B823050067372D /* LineViewController.m in Sources */,
+				ED27D7721B5F629600EC5BAF /* SearchStopsTableViewController.m in Sources */,
+				ED87614719DD9ECA0012EB86 /* StopDetailsTableViewController.m in Sources */,
+				EDDBE01719FA95F40086A4CC /* RouteResultTableViewController.m in Sources */,
+				3EAD0B3619B826940067372D /* HomeViewController.m in Sources */,
+				3EAD0B0919B823050067372D /* main.m in Sources */,
+				ED75F31619E827E800F6C84C /* SearchStopTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EAD0B1919B823050067372D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EAD0B2B19B823050067372D /* bustickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EAD0B2319B823050067372D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EAD0AF819B823050067372D /* busticker */;
+			targetProxy = 3EAD0B2219B823050067372D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EAD0B0519B823050067372D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EAD0B0619B823050067372D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3EAD0B2719B823050067372D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EAD0B2819B823050067372D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ED99012019D9B42E00CA440A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED99012119D9B42E00CA440A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EAD0B2C19B823050067372D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3EAD0B2D19B823050067372D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EAD0B2F19B823050067372D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80742B69CDEF07B7D3191A0C /* Pods-busticker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "busticker/busticker-Prefix.pch";
+				INFOPLIST_FILE = "busticker/busticker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3EAD0B3019B823050067372D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF8BEEE48550101E033C024 /* Pods-busticker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "busticker/busticker-Prefix.pch";
+				INFOPLIST_FILE = "busticker/busticker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3EAD0B3219B823050067372D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/busticker.app/busticker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "busticker/busticker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bustickerTests/bustickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3EAD0B3319B823050067372D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/busticker.app/busticker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "busticker/busticker-Prefix.pch";
+				INFOPLIST_FILE = "bustickerTests/bustickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EAD0AF419B823050067372D /* Build configuration list for PBXProject "busticker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EAD0B2C19B823050067372D /* Debug */,
+				3EAD0B2D19B823050067372D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EAD0B2E19B823050067372D /* Build configuration list for PBXNativeTarget "busticker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EAD0B2F19B823050067372D /* Debug */,
+				3EAD0B3019B823050067372D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EAD0B3119B823050067372D /* Build configuration list for PBXNativeTarget "bustickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EAD0B3219B823050067372D /* Debug */,
+				3EAD0B3319B823050067372D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EAD0AF119B823050067372D /* Project object */;
+}

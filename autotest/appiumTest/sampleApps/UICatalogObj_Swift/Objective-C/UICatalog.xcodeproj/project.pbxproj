@@ -41,6 +41,9 @@
 		535682BE18F3670300BAAD62 /* AAPLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A418F3670300BAAD62 /* AAPLWebViewController.m */; };
 		535682BF18F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A618F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m */; };
 		53874F9918F36B1800510922 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53874F9718F36B1800510922 /* Localizable.strings */; };
+		ED5624C31B0F284D00BEBACB /* AAPLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5624C21B0F284D00BEBACB /* AAPLTableViewController.m */; };
+		ED7506F51B6D4DBD00A2DB02 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7506F31B6D4DBD00A2DB02 /* Fabric.framework */; };
+		ED7506F61B6D4DBD00A2DB02 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7506F41B6D4DBD00A2DB02 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +112,10 @@
 		535682A518F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AAPLApplicationSpecific.h"; sourceTree = "<group>"; };
 		535682A618F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AAPLApplicationSpecific.m"; sourceTree = "<group>"; };
 		53874F9818F36B1800510922 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ED5624C11B0F284D00BEBACB /* AAPLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLTableViewController.h; sourceTree = "<group>"; };
+		ED5624C21B0F284D00BEBACB /* AAPLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLTableViewController.m; sourceTree = "<group>"; };
+		ED7506F31B6D4DBD00A2DB02 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		ED7506F41B6D4DBD00A2DB02 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +124,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5356824018F3656900BAAD62 /* CoreGraphics.framework in Frameworks */,
+				ED7506F61B6D4DBD00A2DB02 /* Crashlytics.framework in Frameworks */,
 				5356824218F3656900BAAD62 /* UIKit.framework in Frameworks */,
 				5356823E18F3656900BAAD62 /* Foundation.framework in Frameworks */,
+				ED7506F51B6D4DBD00A2DB02 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +199,8 @@
 				5356824318F3656900BAAD62 /* UICatalog */,
 				5356823C18F3656900BAAD62 /* Frameworks */,
 				5356823B18F3656900BAAD62 /* Products */,
+				ED7506F31B6D4DBD00A2DB02 /* Fabric.framework */,
+				ED7506F41B6D4DBD00A2DB02 /* Crashlytics.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,6 +278,8 @@
 				535682A418F3670300BAAD62 /* AAPLWebViewController.m */,
 				3E1D56EB194F5FBA00D8298E /* Search */,
 				3EF3286C1931DF2000B1C20C /* Toolbar View Controllers */,
+				ED5624C11B0F284D00BEBACB /* AAPLTableViewController.h */,
+				ED5624C21B0F284D00BEBACB /* AAPLTableViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -294,6 +307,7 @@
 				5356823618F3656900BAAD62 /* Sources */,
 				5356823718F3656900BAAD62 /* Frameworks */,
 				5356823818F3656900BAAD62 /* Resources */,
+				ED7506F21B6D351E00A2DB02 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -344,6 +358,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ED7506F21B6D351E00A2DB02 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 63eafe5244967175de6fd04384ff1d312495be7b 7e8efed3e155cbddeb61867ebc0ad2ce2d589c55f46c3f59527a35a90791d1ab";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5356823618F3656900BAAD62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -375,6 +405,7 @@
 				535682A818F3670300BAAD62 /* AAPLActivityIndicatorViewController.m in Sources */,
 				535682AC18F3670300BAAD62 /* AAPLCustomSearchBarViewController.m in Sources */,
 				5356824A18F3656900BAAD62 /* main.m in Sources */,
+				ED5624C31B0F284D00BEBACB /* AAPLTableViewController.m in Sources */,
 				3E8CF107196DD83A00420B6B /* AAPLSearchBarEmbeddedInNavigationBarViewController.m in Sources */,
 				535682B118F3670300BAAD62 /* AAPLImageViewController.m in Sources */,
 			);
@@ -434,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -479,6 +510,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICatalog/UICatalog-Prefix.pch";
 				INFOPLIST_FILE = "UICatalog/UICatalog-Info.plist";
@@ -492,6 +527,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UICatalog/UICatalog-Prefix.pch";
 				INFOPLIST_FILE = "UICatalog/UICatalog-Info.plist";

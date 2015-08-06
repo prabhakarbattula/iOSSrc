@@ -1,0 +1,21 @@
+Routing Todo -
+a) Introduce local notification for signalling result found
+b) Extract Arrival, Departure time, Stop Name.
+--------------------------------------------------------------|
+|Bus No: Arrival: Location Name      Departure: Location Name |
+| (No)              (Time)                          (Time)    |
+|Route:  Walk -      Bus -        Walk                        |
+|        (Mins) (BusNo:Mins)     (Mins)                       |
+===============================================================
+c) Show List view by creating multi columns tableview
+d) Show details view with anyother information (such as total route )
+
+My Location -
+a) Find current location using location api
+b) Create a query in BTNetworking
+c) Convert current location to query Coordinates
+d) Send query
+e) Show stops in the location (List view)
+f) if Selected send query inorder to determine Next Departures
+
+Favorites --

@@ -1,11 +1,12 @@
 dependencies:
   override:
-
+  	# Install Robot Framework, Appium, Robotframework-appiumlibrary
 	pip install robotframework
 	gem install appium_console
 	pip install robotframework-appiumlibrary
 
 general:
+	# Set Build directory
   build_dir: autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
 
 machine:
@@ -16,13 +17,20 @@ machine:
     version: "6.3.1"
 
   environment:
+  	# Set XCode_Project and Scheme 
   	XCODE_PROJECT: autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
   	XCODE_SCHEME: UICatalog.xcscheme
 
   post:
+  	# Run appium in background after build completes
     - ./appium:
         background: true
     - sleep 5
 
    test:
+   #cd to Code directory
+   cd autotest/appiumTest/sampleApps/UICatalogObj_Swift/Objective-C
+   #build
    xcodebuild -configuration Release -target UICatalog -arch i386 -sdk iphonesimulator8.2
+   #run robot test
+   pybot tests/robotSample/iosUICatlog.robot
